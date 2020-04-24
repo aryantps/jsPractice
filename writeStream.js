@@ -2,7 +2,7 @@
 var fs = require('fs');
 
 var readStream = fs.createReadStream('examplereadst.txt','utf8');
-var writeStream = fs.createWriteStream('examplewritest');
+var writeStream = fs.createWriteStream('examplewritest.txt');
 
 //data event fired when data is available to read
 readStream.on('data', function(chunk){
@@ -12,4 +12,3 @@ readStream.on('data', function(chunk){
 writeStream.on('error', function(err){
 	console.log('error :  ',err.stack);
 });
-
