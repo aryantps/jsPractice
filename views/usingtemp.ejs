@@ -1,0 +1,49 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ARYANT</title> 
+    <style>
+        body{
+            background: chocolate;
+            font-family: comic sans ms bold ;
+            color:azure;
+        }
+        h1{
+            letter-spacing: 3px;
+            text-align: center;
+            font-size: 50px;
+        }
+        p{
+            font-size: 20px;
+            text-align: center;
+        }
+        #para{
+            text-align: center;
+            color:blue;
+            padding-top: 150px;
+            font-size: 25px;
+        }
+        ul{
+            text-align: center;
+            list-style: inside;
+            background: crimson;
+        }
+    </style>   
+    <script src="#"></script>
+</head>
+<body>
+    <h1>WELCOME TO THE MOST AMAZING JAVASCRIPT DRIVEN WEBSITE</h1>
+    <p>This is a page about most awesome website which runs on Node.js in backend making it very fast and resoureceful website.</p>  
+    <div>
+        <p id = "para">THIS IS <h1><%= person %></h1></p>
+        <p>This person has a job of <%= additional_info.job %> and is passout of year <%= additional_info.yearPassing %>.</p>
+        <p>His language proficiency can be tested in: </p>
+        <ul>
+            <% additional_info.prog_lang.forEach(function(element){ %>
+                <li> <%= element %> </li>
+            <% }) %>
+        </ul>
+    </div>
+</body>
+</html>
